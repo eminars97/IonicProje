@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Notlar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="floating">Notun</ion-label>
+    <ion-input type="string" [(ngModel)]="inputText"></ion-input>
+  </ion-item>
+  <ion-item>
+<ion-button  (click)="addItem({Notlar:inputText})">Not Ekle</ion-button>
+</ion-item>
+<ion-list >
+    <ion-item *ngFor="let item of items" (click)="editNot(item.key)">
+      {{item.Notlar}}
+    </ion-item>
+</ion-list>
+</ion-content>

@@ -1,0 +1,6 @@
+[submodule "src/app/students"]
+	path = src/app/students
+	url = https://github.com/2019-BLM441/module-150201127.git
+[submodule "module-150201127"]
+	path = module-150201127
+	url = https://github.com/2019-BLM441/module-150201127.git

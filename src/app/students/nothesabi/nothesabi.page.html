@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Geçme Notu Hesapla</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+  <ion-item>
+    <ion-label position="floating">Vize Notu</ion-label>
+    <ion-input type="number" [(ngModel)]="vizenotu"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Vizenin Etkisi(Yüzdelik olarak)</ion-label>
+    <ion-input type="number" [(ngModel)]="vizenotuetkisi"></ion-input>
+  </ion-item>
+</ion-list>
+<ion-button fill="solid" expand="block" color="dark" (click)="hesapla()">Hesapla</ion-button>
+
+</ion-content>

@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-title>
+      Dersleri Listele
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button fill="solid" expand="block" color="dark" (click)="getDersler()">Dersleri Listele</ion-button>
+  <ion-list>
+    <ion-item *ngFor="let portal of portals">
+      <h2>{{ dersler.dersadi }}</h2>
+      <h2>{{ dersler.vizenotu }}</h2>
+      <h2>{{ dersler.finalnotu }}</h2>
+      <h2>{{ dersler.kredi }}</h2>
+    </ion-item>
+  </ion-list>  
+</ion-content>
